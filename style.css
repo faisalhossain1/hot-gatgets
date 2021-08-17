@@ -1,0 +1,87 @@
+.nav-img{
+    height: 100%;
+}
+.navbar{
+    background-color: white;
+}
+.btn{
+    color: white;
+    background: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.navbar{
+    font-weight: bold;
+}
+.carousel-indicators .slider{
+    background-color: lightgray;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+}
+.carousel-indicators .active{
+    background-color: orange;
+    width: 30px;
+}
+.image img{
+    width: 200px;
+}
+.card{
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px lightgray;
+}
+.card-footer{
+    background-color: white;
+    border: none;
+}
+p{
+    color: dimgray;
+    font-weight: bold;
+}
+.see-all{
+    color: orange;
+    font-weight: 700;
+    cursor: pointer;
+}
+.home{
+    margin-bottom: 100px;
+}
+.headin-2 h2{
+    text-align: center;
+    text-decoration: underline orange;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 20px;
+}
+.big-img img{
+    width: 100%;
+}
+
+.img-1 img{
+    box-shadow: 10px 10px 10px lightgrey;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.img-2{
+    margin-top: 70px;
+}
+.img-2 img{
+    padding: 20px 30px;
+}
+footer p{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .card{
+        margin-bottom: 100px !important;
+    }
+  }
