@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Apple Commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .heading-text::after{
+      content: "";
+      position: absolute;
+      background: orange;
+      width: 150px;
+      height: 7px;
+      border-radius: 20px;
+      display: block;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .carousel-indicators .slider{
+    background-color: lightgray;
+    width: 10px;
+    height: 10px;
+    border-radius: 30px;
+    }
+    .carousel-indicators .active{
+        background: orange !important;
+        width: 30px;
+    }
+    .card{
+        box-shadow: 10px 10px 10px lightgrey;
+        border-radius: 10px !important;
+    }
+    @media (max-width: 768px) {
+      .navbar-brand img{
+        width: 150px;
+      }
+      .carousel-item{
+        height: 50vh;
+        margin-top: 50px;
+      }
+      .catagory-img{
+        padding: 10px !important;
+      }
+    }
+    @media (max-width: 480px) {
+      .navbar-brand img{
+        width: 100px;
+      }
+      .carousel-item{
+        height: 50vh;
+        margin-top: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header style="margin-bottom: 150px;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#product">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#contact">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-dark" href="#more">MORE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active slider"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="slider"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class="slider"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                  <div>
+                    <h1>Mackbook Pro</h1>
+                    <p class="text-muted font-weight-bold">For professionals ready to push their creativity, these industry-leading apps offer maximum control over editing, processing, and output of music and film.</p>
+                    <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img style="width: 100%;" src="images/banner-products/product-1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                      <h1>Apple Headphone</h1>
+                      <p class="text-muted font-weight-bold">Enjoy premium sound quality or create music with ease. Shop headphones, earphones, speakers, and microphones from Apple. Buy online and get free shipping.</p>
+                      <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 order-1">
+                    <img style="width: 100%;" src="images/banner-products/slider-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                  <div>
+                    <h1>Apple HomePod</h1>
+                    <p class="text-muted font-weight-bold">HomePod is a breakthrough speaker with high‑fidelity audio that adapts to its location. Both help you take care of everyday tasks with Siri, control your smart home,and send Intercom messages to every room.</p>
+                    <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img style="width: 100%;" src="images/banner-products/slider-3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </header>
+  <section class="phone" id="product" style="margin-bottom: 150px;">
+    <div class="container">
+      <h1 class="text-center heading-text">Phone</h1>
+      <div class="text-right font-weight-bold">
+        <p style="color: orange; cursor: pointer;">SEE MORE</p>
+      </div>
+      <div class="card-deck">
+        <div class="card border-0 d-flex align-items-center">
+          <img class="card-img-top" style="width: 200px"; src="images/phone/phone-1.png" alt="Phone 1 Image">
+          <div class="card-body">
+            <h5 class="card-title text-center">Redmi Note 8</h5>
+            <p class="card-text text-center font-weight-bold text-muted">Capture every aspect with the AI quad-camera More than just ultra-clear pictures</p>
+          </div>
+          <div class="card-footer border-0 bg-white d-flex justify-content-center">
+            <div>
+              <h2 class="text-center">$346</h2>
+              <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 d-flex align-items-center">
+          <img class="card-img-top" style="width: 200px"; src="images/phone/phone-2.png" alt="phone-2.png">
+          <div class="card-body">
+            <h5 class="card-title text-center">I Phone 12 Pro Max</h5>
+            <p class="card-text text-center font-weight-bold text-muted">iOS 14 is packed with shortcuts that get you just what you want, right when you want it.</p>
+          </div>
+          <div class="card-footer border-0 bg-white d-flex justify-content-center">
+            <div>
+              <h2 class="text-center">$1099</h2>
+              <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 d-flex align-items-center">
+          <img class="card-img-top" style="width: 200px"; src="images/phone/phone-3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sumsung</h5>
+            <p class="card-text text-center font-weight-bold text-muted">Get up to $200 instant credit for add-ons,‡ the highest online trade-in valuesβ and 12 months of Samsung Care+ on us.Ω  For a limited time.</p>
+          </div>
+          <div class="card-footer border-0 bg-white d-flex justify-content-center">
+            <div>
+              <h2 class="text-center">$965</h2>
+              <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="laptop" id="laptop" style="margin-bottom: 150px;">
+    <div class="container">
+      <h1 class="text-center heading-text">Laptop</h1>
+      <div class="text-right font-weight-bold">
+        <p style="color: orange; cursor: pointer;">SEE MORE</p>
+      </div>
+      <div class="card-deck">
+        <div class="card border-0 d-flex align-items-center">
+          <img class="card-img-top" src="images/laptop/product-1.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Mackbook Pro</h5>
+            <p class="card-text text-center font-weight-bold text-muted">Our most powerful notebooks featuring fast processors, incredible graphics, Touch Bar, and a spectacular Retina display.</p>
+          </div>
+          <div class="card-footer border-0 bg-white d-flex justify-content-center">
+            <div>
+              <h2 class="text-center">$1200</h2>
+              <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 d-flex align-items-center">
+          <img class="card-img-top" src="images/laptop/product-2.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Abus Boice Book</h5>
+            <p class="card-text text-center font-weight-bold text-muted">ASUSTek Computer Inc. is a Taiwanese multinational computer and phone hardware and electronics company headquartered in Beitou District, Taipei, Taiwan.</p>
+          </div>
+          <div class="card-footer border-0 bg-white d-flex justify-content-center">
+            <div>
+              <h2 class="text-center">$752</h2>
+              <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 d-flex align-items-center">
+          <img class="card-img-top" src="images/laptop/product-3.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Mackbook Air</h5>
+            <p class="card-text text-center font-weight-bold text-muted">With an immersive Retina display, the largest battery capacity ever in a MacBook Air, Magic Keyboard, and massive ...</p>
+          </div>
+          <div class="card-footer border-0 bg-white d-flex justify-content-center">
+            <div>
+              <h2 class="text-center">$966</h2>
+              <button type="button" class="btn font-weight-bold" style="background: black; color: white; padding: 10px 20px;">BUY NOW >></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="catagory" style="margin-bottom: 100px;">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <h1 class="heading-text">Catagory</h1>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-6">
+          <div class="row" style="width: 100%;">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <div style="box-shadow: 10px 10px 10px lightgrey, -10px -10px 10px lightgray; border-radius: 20px;" class="p-4 catagory-img">
+                <img src="images/Categories/bag.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+              <div>
+                <img style="box-shadow: 10px 10px 10px lightgrey, -10px -10px 10px lightgray; border-radius: 20px;" class="p-4 m-3 catagory-img" src="images/Categories/perfume.png" alt="">
+                <img style="box-shadow: 10px 10px 10px lightgrey, -10px -10px 10px lightgray; border-radius: 20px;" class="p-4 m-3 catagory-img" src="images/Categories/shoe.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img style="width: 100%;" src="images/Categories/pale-order.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="d-flex justify-content-center">
+      <p class="text-muted font-weight-bold">© 2021. Apple.com. All rights reserved. New Youk, USA</p>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
